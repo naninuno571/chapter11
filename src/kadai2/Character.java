@@ -1,6 +1,6 @@
 package kadai2;
 
-import kadai1.Matango;
+import kadai2.Matango;
 
 public abstract class Character {
 
@@ -13,8 +13,5 @@ public abstract class Character {
         System.out.println(name+"は逃げ出した！");
     }
 
-    public void attack(Matango m2) {
-        System.out.println(name+"の攻撃！");
-        System.out.println("敵に"+m2+"のダメージを与えた");
-    }
+    public abstract void attack(Matango m2);
 }
